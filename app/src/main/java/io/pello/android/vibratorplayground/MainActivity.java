@@ -3,6 +3,7 @@ package io.pello.android.vibratorplayground;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // shake it
         if (vibrator.hasVibrator()) {
             vibrator.vibrate(time);
-
+            Log.d("PELLODEBUG", "Vibrating " + time + " milliseconds");
             // patterns: gap, vibrate time, gap, vibrate time, gap,...
             long[] pattern = { 1000, 100, 0, 200, 100, 200 };
             // vibrate patterns and repeat

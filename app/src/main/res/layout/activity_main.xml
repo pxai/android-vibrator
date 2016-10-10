@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
-        android:text="Set value in seconds" />
+        android:text="Set value in milliseconds" />
 
     <EditText
         android:layout_width="match_parent"
